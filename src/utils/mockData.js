@@ -23,7 +23,7 @@ export const initialServices = [
     id: 'srv-ai',
     title: 'Artificial Intelligence & Machine Learning',
     shortDesc: 'Automate complex operations, extract strategic insights, and build cognitive systems.',
-    description: 'We design and deploy production-grade AI solutions including LLM custom finetuning, computer vision pipelines, predictive analytics engines, and neural search systems tailored to[...]
+    description: 'We design and deploy production-grade AI solutions including LLM custom finetuning, computer vision pipelines, predictive analytics engines, and neural search systems tailored to enterprise needs.',
     icon: 'FaBrain',
     category: 'Advanced Tech',
     features: ['Custom LLM Integrations', 'Predictive Analysis Engines', 'Computer Vision Pipeline', 'Natural Language Processing'],
@@ -77,7 +77,7 @@ export const initialServices = [
     id: 'srv-data',
     title: 'Data Analytics & Big Data',
     shortDesc: 'Convert petabytes of raw system data into dashboards that drive board-level decisions.',
-    description: 'Data engineering pipelines utilizing Apache Spark, Snowflake, and DBT, combined with rich business intelligence dashboard solutions using PowerBI, Tableau, and custom React chart[...]
+    description: 'Data engineering pipelines utilizing Apache Spark, Snowflake, and DBT, combined with rich business intelligence dashboard solutions using PowerBI, Tableau, and custom React charting libraries.',
     icon: 'FaChartBar',
     category: 'Advanced Tech',
     features: ['Data Pipeline Orchestration', 'Snowflake & BigQuery Data Warehousing', 'BI Custom Dashboard Engines', 'Real-time Analytics Streams'],
@@ -156,7 +156,7 @@ export const initialBlogs = [
     id: 'blog-01',
     title: 'The Future of Generative AI in Enterprise Environments',
     summary: 'Explore how large language models are transitioning from simple chatbots to agentic workflows that redefine business processes.',
-    content: 'Generative AI is shifting from conversational tools to autonomous agents. Enterprises are no longer just asking models to summarize text; they are designing agent loops that can que[...]
+    content: 'Generative AI is shifting from conversational tools to autonomous agents. Enterprises are no longer just asking models to summarize text; they are designing agent loops that can query databases, invoke APIs, and execute business logic autonomously.',
     author: 'Dharani D, Founder & Full Stack Developer',
     avatar: dharani,
     date: '2026-06-15',
@@ -168,7 +168,7 @@ export const initialBlogs = [
     id: 'blog-02',
     title: 'Securing Cloud Environments: A Zero-Trust Framework Guide',
     summary: 'Standard security perimeters are obsolete. Learn why zero-trust architecture is the only way to safeguard decentralized networks.',
-    content: 'With hybrid workspaces and multi-cloud architectures, the concept of a "trusted internal network" has vanished. Hackers who breach a perimeter firewall can easily traverse adjacent [...]
+    content: 'With hybrid workspaces and multi-cloud architectures, the concept of a "trusted internal network" has vanished. Hackers who breach a perimeter firewall can easily traverse adjacent systems. Zero-trust assumes no trust by default and verifies every access request.',
     author: 'Naveen, Backend Developer',
     avatar: naveen,
     date: '2026-06-20',
@@ -180,7 +180,7 @@ export const initialBlogs = [
     id: 'blog-03',
     title: 'Building Accessible React Interfaces with Design Systems',
     summary: 'How DSNOVE crafts premium user experiences using component libraries, motion design, and accessibility-first workflows.',
-    content: 'Modern enterprise dashboards demand more than functional layouts — they require intuitive navigation, consistent visual language, and inclusive design patterns that work across de[...]
+    content: 'Modern enterprise dashboards demand more than functional layouts — they require intuitive navigation, consistent visual language, and inclusive design patterns that work across devices and assistive technologies.',
     author: 'Naveen Raj, UI/UX Designer',
     avatar: naveenraj,
     date: '2026-06-24',
@@ -359,7 +359,7 @@ const seedClientData = () => {
         createdAt: '2026-06-22',
         messages: [
           { sender: 'client', text: 'Hi, we notice latency spikes up to 4.2 seconds when processing concurrent scans. Can you look into this?', date: '2026-06-22 10:14 AM' },
-          { sender: 'admin', text: 'Hello John, we are analyzing the container logs. It looks like auto-scaling triggers are set slightly too high. We are lowering the CPU thresholds to trigger s[...]
+          { sender: 'admin', text: 'Hello John, we are analyzing the container logs. It looks like auto-scaling triggers are set slightly too high. We are lowering the CPU thresholds to trigger sooner.', date: '2026-06-22 02:45 PM' },
         ],
       },
       {
@@ -389,8 +389,8 @@ const seedClientData = () => {
 
   if (!localStorage.getItem('dsnove_enquiries')) {
     const seedEnquiries = [
-      { id: 'enq-01', name: 'James Carter', email: 'james@vertex.com', subject: 'Enterprise Cloud Support Query', message: 'Hello, we are seeking custom Kubernetes support and architectural asses[...]
-      { id: 'enq-02', name: 'Laura Bailey', email: 'laura@cyberdyn.co', subject: 'Custom AI Chatbot Implementation', message: 'Hi! We would like to configure a private RAG database utilizing our [...]
+      { id: 'enq-01', name: 'James Carter', email: 'james@vertex.com', subject: 'Enterprise Cloud Support Query', message: 'Hello, we are seeking custom Kubernetes support and architectural assessment for our multi-region deployment.' },
+      { id: 'enq-02', name: 'Laura Bailey', email: 'laura@cyberdyn.co', subject: 'Custom AI Chatbot Implementation', message: 'Hi! We would like to configure a private RAG database utilizing our proprietary documents and data.' },
     ];
     localStorage.setItem('dsnove_enquiries', JSON.stringify(seedEnquiries));
   }
