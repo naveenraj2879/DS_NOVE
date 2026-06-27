@@ -1,0 +1,76 @@
+/* Theme Design System for DSNOVE */
+
+:root {
+  /* Common Tokens */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-tech: 'Space Grotesk', 'Outfit', sans-serif;
+  
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --glow-primary: 0 0 20px rgba(var(--primary-rgb), 0.35);
+  --glow-primary-lg: 0 0 35px rgba(var(--primary-rgb), 0.5);
+  
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+}
+
+/* Dark Theme (Default) */
+[data-theme="dark"] {
+  --bg-primary: #05050a;
+  --bg-secondary: #0d0e17;
+  --bg-tertiary: #131422;
+  --bg-gradient: linear-gradient(135deg, #05050a 0%, #0d0e17 100%);
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  
+  --primary: #00f2fe;
+  --primary-rgb: 0, 242, 254;
+  --secondary: #4facfe;
+  --secondary-rgb: 79, 172, 254;
+  --accent: #a855f7;
+  
+  --border-color: rgba(255, 255, 255, 0.07);
+  --glass-bg: rgba(13, 14, 23, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: rgba(0, 0, 0, 0.5);
+  --glass-blur: blur(16px);
+  
+  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glow-intensity: 0.3;
+  --scrollbar-thumb: #1d1e2e;
+  --scrollbar-bg: #05050a;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f3f5;
+  --bg-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --primary: #0a58ca;
+  --primary-rgb: 10, 88, 202;
+  --secondary: #0dcaf0;
+  --secondary-rgb: 13, 202, 240;
+  --accent: #7c3aed;
+  
+  --border-color: rgba(15, 23, 42, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: rgba(15, 23, 42, 0.05);
+  --glass-blur: blur(12px);
+  
+  --card-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.06);
+  --glow-intensity: 0.1;
+  --scrollbar-thumb: #ced4da;
+  --scrollbar-bg: #f8f9fa;
+}

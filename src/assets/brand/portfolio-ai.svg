@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="40" y="40" width="720" height="420" rx="16" stroke="#00f2fe" stroke-width="2" opacity="0.4"/>
+  <circle cx="400" cy="220" r="80" stroke="#00f2fe" stroke-width="3" opacity="0.8"/>
+  <path d="M360 220 L390 250 L440 190" stroke="#00f2fe" stroke-width="4" fill="none"/>
+  <text x="400" y="380" text-anchor="middle" fill="#00f2fe" font-family="Arial,sans-serif" font-size="28" font-weight="700">DSNOVE AI Platform</text>
+</svg>
