@@ -1,7 +1,7 @@
 // Initial Mock Data for DSNOVE
 
 import dharani from '../assets/team/dharani.jpeg';
-import shriharan from '../assets/team/Shri-Haran.jpeg';
+import shriharan from '../assets/team/shri-haran.jpeg';
 import naveen from '../assets/team/naveen.jpeg';
 import naveenraj from '../assets/team/naveenraj.jpeg';
 import portfolioAiImg from '../assets/brand/portfolio-ai.svg';
@@ -23,7 +23,7 @@ export const initialServices = [
     id: 'srv-ai',
     title: 'Artificial Intelligence & Machine Learning',
     shortDesc: 'Automate complex operations, extract strategic insights, and build cognitive systems.',
-    description: 'We design and deploy production-grade AI solutions including LLM custom finetuning, computer vision pipelines, predictive analytics engines, and neural search systems tailored to your proprietary datasets.',
+    description: 'We design and deploy production-grade AI solutions including LLM custom finetuning, computer vision pipelines, predictive analytics engines, and neural search systems tailored to[...]
     icon: 'FaBrain',
     category: 'Advanced Tech',
     features: ['Custom LLM Integrations', 'Predictive Analysis Engines', 'Computer Vision Pipeline', 'Natural Language Processing'],
@@ -77,7 +77,7 @@ export const initialServices = [
     id: 'srv-data',
     title: 'Data Analytics & Big Data',
     shortDesc: 'Convert petabytes of raw system data into dashboards that drive board-level decisions.',
-    description: 'Data engineering pipelines utilizing Apache Spark, Snowflake, and DBT, combined with rich business intelligence dashboard solutions using PowerBI, Tableau, and custom React charts.',
+    description: 'Data engineering pipelines utilizing Apache Spark, Snowflake, and DBT, combined with rich business intelligence dashboard solutions using PowerBI, Tableau, and custom React chart[...]
     icon: 'FaChartBar',
     category: 'Advanced Tech',
     features: ['Data Pipeline Orchestration', 'Snowflake & BigQuery Data Warehousing', 'BI Custom Dashboard Engines', 'Real-time Analytics Streams'],
@@ -156,7 +156,7 @@ export const initialBlogs = [
     id: 'blog-01',
     title: 'The Future of Generative AI in Enterprise Environments',
     summary: 'Explore how large language models are transitioning from simple chatbots to agentic workflows that redefine business processes.',
-    content: 'Generative AI is shifting from conversational tools to autonomous agents. Enterprises are no longer just asking models to summarize text; they are designing agent loops that can query databases, run code, update CRM systems, and collaborate with team members.\n\nAt DSNOVE, we are piloting custom-trained models that act as technical support experts, analyzing server logs, correlating issues, and automatically deploying patches within isolated sandbox environments.\n\n### The Security Challenge\nOne major bottleneck for enterprise adoption is data privacy. Feeding sensitive intellectual property or customer records into public model APIs is a high risk. The solution lies in self-hosted or private cloud instances of open-weights models like Llama-3, optimized via retrieval-augmented generation (RAG). By embedding local knowledge into secure vector databases, enterprises maintain full data custody while exploiting state-of-the-art cognitive capabilities.',
+    content: 'Generative AI is shifting from conversational tools to autonomous agents. Enterprises are no longer just asking models to summarize text; they are designing agent loops that can que[...]
     author: 'Dharani D, Founder & Full Stack Developer',
     avatar: dharani,
     date: '2026-06-15',
@@ -168,7 +168,7 @@ export const initialBlogs = [
     id: 'blog-02',
     title: 'Securing Cloud Environments: A Zero-Trust Framework Guide',
     summary: 'Standard security perimeters are obsolete. Learn why zero-trust architecture is the only way to safeguard decentralized networks.',
-    content: 'With hybrid workspaces and multi-cloud architectures, the concept of a "trusted internal network" has vanished. Hackers who breach a perimeter firewall can easily traverse adjacent systems unchecked if access controls are flat.\n\nZero-trust architecture enforces a simple motto: "Never Trust, Always Verify." Every user, device, and service requesting access to resources must be verified regardless of their location.\n\n### Key Pillars of Zero-Trust\n1. **Micro-segmentation**: Divide your cloud assets into small security zones to limit horizontal movement during a breach.\n2. **Least Privilege Access**: Grant users the absolute minimum level of permissions required to execute their specific job, using short-lived tokens.\n3. **Continuous Monitoring**: Analyze API access requests, network flows, and machine operations constantly using AI anomaly detection engines.',
+    content: 'With hybrid workspaces and multi-cloud architectures, the concept of a "trusted internal network" has vanished. Hackers who breach a perimeter firewall can easily traverse adjacent [...]
     author: 'Naveen, Backend Developer',
     avatar: naveen,
     date: '2026-06-20',
@@ -180,7 +180,7 @@ export const initialBlogs = [
     id: 'blog-03',
     title: 'Building Accessible React Interfaces with Design Systems',
     summary: 'How DSNOVE crafts premium user experiences using component libraries, motion design, and accessibility-first workflows.',
-    content: 'Modern enterprise dashboards demand more than functional layouts — they require intuitive navigation, consistent visual language, and inclusive design patterns that work across devices.\n\nAt DSNOVE, our UI/UX team led by Naveen Raj builds Figma design systems that map directly to React component libraries. This ensures pixel-perfect handoffs, faster sprint cycles, and cohesive branding across client portals and admin consoles.\n\n### Design System Best Practices\n1. **Token-driven styling**: Define color, spacing, and typography tokens once and propagate them through CSS variables.\n2. **Motion with purpose**: Use Framer Motion for micro-interactions that guide attention without overwhelming users.\n3. **Accessibility audits**: Test keyboard navigation, contrast ratios, and screen reader compatibility before every release.',
+    content: 'Modern enterprise dashboards demand more than functional layouts — they require intuitive navigation, consistent visual language, and inclusive design patterns that work across de[...]
     author: 'Naveen Raj, UI/UX Designer',
     avatar: naveenraj,
     date: '2026-06-24',
@@ -359,7 +359,7 @@ const seedClientData = () => {
         createdAt: '2026-06-22',
         messages: [
           { sender: 'client', text: 'Hi, we notice latency spikes up to 4.2 seconds when processing concurrent scans. Can you look into this?', date: '2026-06-22 10:14 AM' },
-          { sender: 'admin', text: 'Hello John, we are analyzing the container logs. It looks like auto-scaling triggers are set slightly too high. We are lowering the CPU thresholds to trigger spinups faster.', date: '2026-06-22 02:45 PM' },
+          { sender: 'admin', text: 'Hello John, we are analyzing the container logs. It looks like auto-scaling triggers are set slightly too high. We are lowering the CPU thresholds to trigger s[...]
         ],
       },
       {
@@ -389,8 +389,8 @@ const seedClientData = () => {
 
   if (!localStorage.getItem('dsnove_enquiries')) {
     const seedEnquiries = [
-      { id: 'enq-01', name: 'James Carter', email: 'james@vertex.com', subject: 'Enterprise Cloud Support Query', message: 'Hello, we are seeking custom Kubernetes support and architectural assessment from DSNOVE.', date: '2026-06-24', status: 'unread' },
-      { id: 'enq-02', name: 'Laura Bailey', email: 'laura@cyberdyn.co', subject: 'Custom AI Chatbot Implementation', message: 'Hi! We would like to configure a private RAG database utilizing our customer documentation.', date: '2026-06-25', status: 'unread' },
+      { id: 'enq-01', name: 'James Carter', email: 'james@vertex.com', subject: 'Enterprise Cloud Support Query', message: 'Hello, we are seeking custom Kubernetes support and architectural asses[...]
+      { id: 'enq-02', name: 'Laura Bailey', email: 'laura@cyberdyn.co', subject: 'Custom AI Chatbot Implementation', message: 'Hi! We would like to configure a private RAG database utilizing our [...]
     ];
     localStorage.setItem('dsnove_enquiries', JSON.stringify(seedEnquiries));
   }
