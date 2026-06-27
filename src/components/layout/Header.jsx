@@ -19,7 +19,7 @@ export const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark navbar-premium sticky-top py-3">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center gap-2 fw-bold text-white fs-4" to="/" onClick={() => setIsExpanded(false)}>
-          <span className="text-gradient tech-font" style={{ letterSpacing: '2px', fontWeight: '800' }}>DSNOVE</span>
+          <span className="text-gradient tech-font" style={{ letterSpacing: '2px', fontWeight: '800' }}>DSNOVA</span>
         </Link>
 
         <button 
